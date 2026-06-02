@@ -1,76 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Raynes Games</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<h1>Raynes Games!</h1>
+<h3>Made with ai!</h3>
+<div id="games"></div>
 
-    body {
-      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-      font-family: 'Space Mono', monospace;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 20px;
-    }
+<script
+  src="https://cdn.jsdelivr.net/gh/luminsdk/script@latest/lumin.min.js"
+></script>
 
-    h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 4rem;
-      font-weight: 900;
-      background: linear-gradient(45deg, #00d4ff, #0099ff, #6600ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
-      margin-bottom: 50px;
-      letter-spacing: 3px;
-      animation: glow 2s ease-in-out infinite;
-    }
-
-    h3 {
-      font-family: 'Orbitron', sans-serif;
-      letter-spacing: 2px;
-      color: #00d4ff;
-    }
-
-    @keyframes glow {
-      0%, 100% {
-        filter: drop-shadow(0 0 10px rgba(0, 212, 255, 0.5));
-      }
-      50% {
-        filter: drop-shadow(0 0 20px rgba(102, 0, 255, 0.8));
-      }
-    }
-
-    #games {
-      width: 100%;
-      max-width: 1200px;
-    }
-  </style>
-</head>
-<body>
-  <h1>Raynes games</h1>
-  <h3>made without ai!</h3>
-  <div id="games"></div>
-
-  <script
-    src="https://cdn.jsdelivr.net/gh/luminsdk/script@latest/lumin.min.js"
-  ></script>
-
-  <script>
-    Lumin.init({
-      container: '#games',
-      theme: 'dark'
-    });
-  </script>
-</body>
-</html>
+<script>
+  Lumin.init({
+    container: '#games',
+    theme: 'dark'
+  });
+</script>
